@@ -5,7 +5,7 @@ This project sets up a CI/CD pipeline using GitHub Actions to automate the deplo
 ## Project Structure
 
 ```plaintext
-vpc-terraform-github-action/
+VPC-Terraform-Github-Action/
 │
 ├── .gitignore
 ├── main.tf
@@ -82,4 +82,19 @@ jobs:
         run: terraform apply --auto-approve
         working-directory: ./Terraform-VPC
 ````
+# Usage
 
+1. Clone the repository:
+   ````
+   git clone https://github.com/GovindSingh9447/VPC-Terraform-Github-Action.git
+   cd VPC-Terraform-Github-Action
+   ````
+
+2. Edit the Terraform variable values:
+   - Modify the `terraform.tfvars` file with your desired configuration values.
+
+3. Push changes to GitHub:
+   - Commit and push your changes to the `main` branch of your GitHub repository. This will trigger the GitHub Actions workflow.
+
+4. Monitor the workflow:
+   - Go to the Actions tab of your GitHub repository to monitor the progress of the CI/CD pipeline.      
